@@ -1,6 +1,5 @@
 
-let var1 = "CONSOLE: ";
-let var2 = " SADF";
+
 let var4 = "SUCCESS";
 let pass = "password"
 var userinput = document.getElementById("fname");
@@ -12,21 +11,18 @@ passinput.addEventListener("keypress", function(event){
     }
 });
 document.getElementById("b1").onclick = function(){
-    recInput();
     checklogin();
 }
 document.getElementById("spencerbutton").onclick = function(){
     document.getElementById("spencer").removeAttribute("hidden");
 }
-function recInput(){
-    var2 = document.getElementById("fpass").value;
-    document.getElementById("p1").textContent = var1 + var2;
-}
+
 function checklogin(){
-    if(document.getElementById("fpass").value == "pass" && document.getElementById("fname").value == "user") {
+    if(document.getElementById("fpass").value == "tester" && document.getElementById("fname").value == "devtest") {
         document.getElementById("loginlabel").style.backgroundColor = "green";
         document.getElementById("loginlabel").textContent ="SUCCESS";
         document.getElementById("nextpage").click();
+        sessionStorage.setItem("goodlogin", "0");
     }
     else{
     document.getElementById("loginlabel").style.backgroundColor = "orange";

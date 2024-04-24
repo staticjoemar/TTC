@@ -1,5 +1,8 @@
 
-
+let auth = sessionStorage.getItem("goodlogin");
+if((auth=="null")||(auth==null)){
+    window.location.href = "/index.html";
+}
 
 
 document.getElementById("timeoutbutton").onclick = function() {
@@ -17,6 +20,10 @@ let second = 0;
 let count = 0;
 let daycount = 0;
 let pdcount = +localStorage.getItem("pdsaved");
+
+
+
+
 startBtn.addEventListener('click', function () {
     timer = true;
     stopWatch();
