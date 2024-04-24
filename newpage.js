@@ -1,7 +1,7 @@
 
 let auth = sessionStorage.getItem("goodlogin");
 if((auth=="null")||(auth==null)){
-    window.location.href = "/index.html";
+    window.location.href = "staticjoemar.github.io/TTC/index.html";
 }
 
 
