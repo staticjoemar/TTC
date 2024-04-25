@@ -23,6 +23,7 @@ function checklogin(){
         document.getElementById("loginlabel").textContent ="SUCCESS";
         document.getElementById("nextpage").click();
         sessionStorage.setItem("goodlogin", "0");
+        sessionStorage.setItem("username", document.getElementById("fname").value);
     }
     else{
     document.getElementById("loginlabel").style.backgroundColor = "orange";
