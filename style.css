@@ -1,0 +1,10 @@
+.tile{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    color: black;
+    font-size: 50px;
+    border-radius: 60px;
+    font-weight: bold;
+    background-image:url(images/flower.png);
+}
